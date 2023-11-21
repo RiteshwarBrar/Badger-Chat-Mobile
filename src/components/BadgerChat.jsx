@@ -41,7 +41,7 @@ export default function App() {
             
                 return res.json();
         }).then(data => {
-          console.log(data)
+          //console.log(data)
           setChatrooms(data)
 
         }).catch( err => {
@@ -83,7 +83,7 @@ export default function App() {
           
                 return res.json();
         }).then(data => {
-          console.log(data.token)
+          //console.log(data.token)
           SecureStore.setItemAsync('JWT', data.token)
           //SecureStore.setItemAsync('user', username)
           alert("Login was successful");
@@ -122,14 +122,15 @@ export default function App() {
           }
            return res.json();
       }).then(data => {
-          console.log(res)
+          //console.log(data)
           SecureStore.setItemAsync('JWT', data.token)
           //SecureStore.setItemAsync('user', username)
           alert("Registration was successful");
           //nav("/");
           setUsername(username)              
-          setIsLoggedIn(true);
+          setIsLoggedIn(true)
           setIsGuest(false)
+          setIsRegistering(false)
       }).catch( err => {
 
       });

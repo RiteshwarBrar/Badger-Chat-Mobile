@@ -18,12 +18,14 @@ function BadgerRegisterScreen(props) {
             />
             <Text>Password</Text>
             <TextInput
+                secureTextEntry={true}
                 style={styles.input}
                 onChangeText={onChangePassword}
                 value={password}
             />
             <Text>Confirm Password</Text>
             <TextInput
+                secureTextEntry={true}
                 style={styles.input}
                 onChangeText={onChangeCpassword}
                 value={cpassword}
