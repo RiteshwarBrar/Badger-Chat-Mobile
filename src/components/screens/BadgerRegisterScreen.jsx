@@ -30,6 +30,7 @@ function BadgerRegisterScreen(props) {
                 onChangeText={onChangeCpassword}
                 value={cpassword}
             />
+            
         </SafeAreaView>
         <Button color="crimson" title="Signup " onPress={() => {
             //Alert.alert("Hmmm...", "This should do something!");

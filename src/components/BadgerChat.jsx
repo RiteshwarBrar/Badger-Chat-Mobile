@@ -127,7 +127,7 @@ export default function App() {
           //SecureStore.setItemAsync('user', username)
           alert("Registration was successful");
           //nav("/");
-          setUsername(username)              
+          setUsername(username)               
           setIsLoggedIn(true)
           setIsGuest(false)
           setIsRegistering(false)
