@@ -1,4 +1,5 @@
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
+import BadgerRegisterScreen from './BadgerRegisterScreen';
 
 function BadgerConversionScreen(props) {
 
@@ -6,7 +7,10 @@ function BadgerConversionScreen(props) {
         <Text style={{fontSize: 24, marginTop: -100}}>Ready to signup?</Text>
         <Text>Join BadgerChat to be able to make posts!</Text>
         <Text/>
-        <Button title="Signup!" color="darkred" onPress={() => Alert.alert("Hmmm...", "This should do something!")}/>
+        <Button title="Signup!" color="darkred" onPress={() => {
+            props.setIsRegistering(true)
+            props.setIsLoggedIn(false)
+        }}/>
 
     </View>
 }
